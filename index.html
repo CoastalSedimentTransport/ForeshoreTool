@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreshore vulnerability Assessment Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            width: 250px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .footer-text {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Foreshore Vulnerability Assessment Tool</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h1></h1>
+            
+            <form action="/calculate" method="POST">
+                <div class="form-group">
+                    <label for="water_level">Water Level (m) CVGD2013:</label>
+                    <input type="text" id="water_level" name="water_level">
+                </div>
+
+                <div class="form-group">
+                    <label for="planning_duration">Planning Horizon (yr):</label>
+                    <input type="text" id="planning_duration" name="planning_duration">
+                </div>
+
+                <button type="submit">Calculate</button>
+            </form>
+
+            {% if result %}
+		
+		<img src="https://raw.githubusercontent.com/CoastalSedimentTransport/ForeshoreTool/main/Images/example_5_5.jpeg" alt="alternate text or image replacement text."height="450px" width="950px">
+
+            {% endif %}
+
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">&copy; 2024 <a href="https://github.com/CoastalSedimentTransport" style="color: white;">https://github.com/CoastalSedimentTransport</a></p>
+    </footer>
+
+</body>
+</html>
