@@ -21,10 +21,11 @@ The tool integrates wave measurements, modeling, and multiple GIS datasets—inc
 ## Project Structure
 
 - **1_data&prep
-o **2_WaterLevelAnalysis
+1. **2_WaterLevelAnalysis
+	- **2_WaterLevelAnalysis
 - **3_WaveAnalysis
 - **4_GISAnalysis
 
 
 ## Getting Started
-1. **Install Dependencies**: Ensure you have Python and required packages, as well as ArcPRO installed. :
+**Install Dependencies**: Ensure you have Python and required packages, as well as ArcPRO installed. :
