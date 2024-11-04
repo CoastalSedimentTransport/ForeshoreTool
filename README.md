@@ -20,10 +20,10 @@ The tool integrates wave measurements, modeling, and multiple GIS datasets—inc
 
 ## Project Structure
 
-1_data&prep
-2_WaterLevelAnalysis
-3_WaveAnalysis
-4_GISAnalysis
+- **1_data&prep
+o **2_WaterLevelAnalysis
+- **3_WaveAnalysis
+- **4_GISAnalysis
 
 
 ## Getting Started
