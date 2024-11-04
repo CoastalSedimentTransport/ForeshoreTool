@@ -21,9 +21,10 @@ The tool integrates wave measurements, modeling, and multiple GIS datasets—inc
 ## Project Structure
 
 1. **1_data&prep**
+	1_GNSS_data
 
 2. **2_WaterLevelAnalysis**
-	- **2_WaterLevelAnalysis**
+	- 
 
 3. **3_WaveAnalysis**
 
@@ -31,4 +32,4 @@ The tool integrates wave measurements, modeling, and multiple GIS datasets—inc
 
 
 ## Getting Started
-**Install Dependencies**: Ensure you have Python and required packages, as well as ArcPRO installed. :
+**Install Dependencies**: Ensure you have Python and required packages, as well as ArcPRO installed
